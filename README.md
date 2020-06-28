@@ -51,7 +51,11 @@ One of the caution with ensemble models are over fitting although bagging takes 
    but gives more biased results (they tend to be pessimistic). 
  
 
-In python, bootstrapping uses the ShuffleSplit object to perform the splits. 
+**In python,** 
+
+For bootstrapping 
+
+            ShuffleSplit - to perform the splits. 
 
 For k-fold CV:  
 
@@ -70,11 +74,11 @@ For k-fold CV:
 **3** For each fold, used 9/10 of training data (9 folds) to build th
 e model, the rest to conduct prediction. Meanwhile, we also used the trained model to predict at the test data. Here, different strategies have been applied to collect the validation prediction results (from cv of training data) and submit prediction results. 
 
-	Regarding the **validation prediction results**, it need to collect in each fold as we only have 1/10 of training data to obtian the prediction results. As follows, the test will tell you which row index we should fill in. At the end of 10 folds, we should have every values in the one column (represent one model).
+Regarding the **validation prediction results**, it need to collect in each fold as we only have 1/10 of training data to obtian the prediction results. As follows, the test will tell you which row index we should fill in. At the end of 10 folds, we should have every values in the one column (represent one model).
 ```    
                                      dataset_blend_train[test, j] = pred[:, 1]
 ```
-	Regarding the **test prediction results**, we collected the prediction results for the submit data for each fold and each model. At the end of each model, we need to do avergae of these prediction results of these 10 folds.
+Regarding the **test prediction results**, we collected the prediction results for the submit data for each fold and each model. At the end of each model, we need to do avergae of these prediction results of these 10 folds.
 
 **4** Build a logstic regresson between y and the validation prediction results. Use this model to conduct the prediction of our submit prediction results. This results is more like to assign weights to these models for prediction of final output.
 
