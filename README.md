@@ -1,5 +1,7 @@
 # Ensemble models for classification (combine deep learning with machine learning)
 
+![alt text](https://github.com/tankwin08/ensemble-models-ML-DL-/blob/master/img/ensemble_models.png)
+
 **Objetive:**
 
 To develop a robust approach to conduct classification on data (a person is wearing glasses or not) using a ensemble of models, 
@@ -67,7 +69,7 @@ For k-fold CV:
 
 **Method Overview**
 
-![alt text](https://github.com/tankwin08/ensemble-models-ML-DL-/blob/master/img/ensemble_models.png)
+
 
 **1** Base on optimized parameters such as dropout,neuronPct, neuronShrink to form the NN models.
 
