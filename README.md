@@ -67,7 +67,7 @@ For k-fold CV:
 
 **Method Overview**
 
-![alt text](https://github.com/tankwin08/ensemble-models-ML-DL-/tree/master/img/ensemble_models.png)
+![alt text](https://github.com/tankwin08/blob/ensemble-models-ML-DL-/tree/master/img/ensemble_models.png)
 
 **1** Base on optimized parameters such as dropout,neuronPct, neuronShrink to form the NN models.
 
