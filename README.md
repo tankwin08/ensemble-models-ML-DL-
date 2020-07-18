@@ -37,7 +37,7 @@ There are two major benefits of Ensemble models:
 	More stable model
 
 The aggregate opinion of a multiple models is less noisy than other models. 
-In finance, we called it “Diversification”  a mixed portfolio of many stocks will be much less variable than just one of the stocks alone. 
+In finance, it was called “Diversification”,  a mixed portfolio of many stocks will be much less variable than just one of the stocks alone. 
 
 This is also why your models will be better with ensemble of models rather than individual. 
 One of the caution with ensemble models are over fitting although bagging takes care of it largely.
